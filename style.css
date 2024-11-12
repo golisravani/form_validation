@@ -1,0 +1,90 @@
+body{
+    height:100vh;
+    background-image: linear-gradient(to right, #f9e7bb, #e97cbb, #3d47d9);
+
+}
+
+.form-container{
+    margin: 0 auto;
+    border-radius: 30px;
+    display: grid;
+    justify-content: center;
+    background: transparent;
+   padding: 10px;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(73, 32, 104);
+    display: flex;
+    animation: 3s ease-in 1s infinite reverse both running slidein;
+    font-family: "Pacifico", cursive;
+    text-decoration:dotted underline rgb(255, 255, 255) ;
+}
+@keyframes slidein {
+    0% {
+        transform: translateX(-10%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(10%);
+        opacity: 1;
+    }
+}
+
+.form-content{
+  text-align: center; 
+}
+.form-group:hover{
+    transform: scale(1.1);
+}
+button{
+    margin: 30px;
+    font-size: 20px;
+    background: transparent;
+    border-radius: 20px;
+    justify-content: center;
+    background-color: #fb6f92;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+}
+button:hover{
+    color: #e56b6f;
+    background-color: white;
+    transition: all 0.3 ease-in-out;
+    transform: scale(1.5);
+}
+.form-group{
+  display: flex;
+ flex-direction: column;
+text-align: center;
+ margin-top: 10px;
+  margin-bottom: 15px;
+  width: 250px;
+height: 80px;
+background-color:#f7d6e09a;
+border-radius: 20px;
+} 
+.input-text{
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #780b2aab;
+    color: white;
+}
+fieldset{
+    border: none;
+}
+label{
+    color: #a4133c;
+    font-size: 15px;
+    padding: 2px;
+    font-family: "Lexend", sans-serif;
+}
+.text{
+    color: red;
+    font-size: 10px;
+}
